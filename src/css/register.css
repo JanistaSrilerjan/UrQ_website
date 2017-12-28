@@ -159,6 +159,6 @@ input[type=time] {
 	width: 150px;
 }
 select:disabled{
-	background: #f1f1f1;
+	background: #f7f7f7;
 	color: #a7a7a7;
 }
