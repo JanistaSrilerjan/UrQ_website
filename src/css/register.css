@@ -48,7 +48,7 @@ body {
 
 .col-right {
 	float: right;
-	width: 53%;
+	width: 54%;
 	font-size: 25px;
 }
 
@@ -154,4 +154,11 @@ input[type=time] {
 }
 .button:hover{
 	background-color:#fece2f;
+}
+#input-right .label{
+	width: 150px;
+}
+select:disabled{
+	background: #f1f1f1;
+	color: #a7a7a7;
 }

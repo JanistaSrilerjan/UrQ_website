@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <link href="../src/css/register.css" rel="stylesheet" type="text/css" media="all">
+  <script src="../src/scripts/register.js"></script>
+</body>
   <title>ลงทะเบียน</title>
 </head>
-
 <body>
   <div class="row1">
 
@@ -77,7 +78,7 @@
           </td>
           <td class="col-3"><label>ประเภท</label></td>
           <td>     
-              <select class="food_type">
+              <select class="food_type" id="f_type" onchange="click_shabu_buffet()">
                   <option value="0">ร้านอาหารทั่วไป</option>
                   <option value="1">เครื่องดื่ม/คาเฟ่</option>
                   <option value="2">หมูกระทะ/หมูจุ่ม</option>
@@ -100,7 +101,7 @@
             <label>รูปแบบการเรียกคิว</label>
           </td>
           <td>
-            <select class="queue_type">
+            <select class="queue_type" id="q_type" onchange="disable_select()">
                 <option value="0">เรียงตามหมายเลข</option>
                 <option value="1">กำหนดเลขเองได้</option>
               </select>
@@ -110,7 +111,7 @@
               <label>ประเภทการบริการ</label>
           </td>
           <td> 
-              <select class="service_type">
+              <select class="service_type" id="s_type">
                   <option value="0">จำกัดเวลา</option>
                   <option value="1">ไม่จำกัดเวลา</option>
                 </select>
@@ -130,12 +131,11 @@
         </tr>
         <tr>
           <td class="label">
-            <label>จำนวนพนักงาน
-              <br />ฝ่ายทำอาหาร</label>
+            <label id="num_s">พนักงานฝ่ายทำอาหาร</label>
           </td>
           <td class="fill_num">
             <input type="number" value="" id="num_server" />
-            <label class="label2">คน</label>
+            <label class="label2" id="person">คน</label>
           </td>
         </tr>
       </table>
@@ -146,6 +146,5 @@
       </button>
     </div>
   </div>
-</body>
-
+  
 </html>
