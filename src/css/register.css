@@ -151,6 +151,7 @@ input[type=time] {
     display: inline-block;
 	cursor: pointer;
 	margin-top: 50px;
+	font-weight: bold;
 }
 .button:hover{
 	background-color:#fece2f;
