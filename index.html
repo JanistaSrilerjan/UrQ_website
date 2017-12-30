@@ -4,41 +4,40 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="src/css/login.css" />
-  <title>Login</title>
+  <title>Welcomt to UrQ</title>
 </head>
 
 <body>
   <div class="container">
-    <div id="login" class="signin-card">
-      <div class="logo-image">
-        <img src="src/images/logo.png" alt="Logo" title="Logo" width="200">
+    <div class="login">
+      <div class="logo">
+        <img id="logo" src="src/images/logo.png" alt='logo' />
+        <p id="subhead">Waiting Queue Notification App </p>
       </div>
-      <p class="subhead">Welcome to Waiting Queue Notification App </p>
-      <form action="" method="" class="" role="form">
-        <div id="form-login-username" class="form-group">
-          <input id="username" class="form-control" name="username" type="text" size="18" alt="login" required />
-          <span class="form-highlight"></span>
-          <span class="form-bar"></span>
-          <label for="username" class="float-label">Username</label>
-        </div>
-        <div id="form-login-password" class="form-group">
-          <input id="passwd" class="form-control" name="password" type="password" size="18" alt="password" required>
-          <span class="form-highlight"></span>
-          <span class="form-bar"></span>
-          <label for="password" class="float-label">Password</label>
-        </div>
-        <div>
-          <button class="btn btn-block btn-info ripple-effect" type="submit" name="Submit" alt="sign in" >Sign In</button>
-        </div>
-        <div class="signup">
-          <p>If you don't have an account, Please 
-            <a href="pages/register.html" class="link-user-actions"  >
-                <strong>Sign Up</strong>
-            </a></p>
-        </div>
+      <div class="login-form">
+        <form action="" method="">
+          <div id="form-login-username" class="form-group">
+            <input type="text" required="required" />
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Username</label>
+          </div>
+          <div id="form-login-password" class="form-group">
+            <input type="password" required="required"/><span class="highlight"></span><span class="bar"></span>
+            <label>Password</label>
+          </div>
+          <div>
+            <button class="btn_login" type="submit" alt="log_in" >Login</button>
+          </div>
+          <div class="go-register">
+            <p>หากคุณยังไม่มีบัญชี คลิก 
+              <a href="pages/register.html" class="link-register"  >
+                  <strong>สมัครสมาชิก</strong>
+              </a></p>
+          </div>
+        </form>
+      </div> 
     </div>
-    </form>
-  </div>
   </div>
 </body>
 
