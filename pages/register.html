@@ -1,10 +1,150 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>Register</title>
+  <meta charset="UTF-8">
+  <link href="../src/css/register.css" rel="stylesheet" type="text/css" media="all">
+  <script src="../src/scripts/register.js"></script>
+</body>
+  <title>ลงทะเบียน UrQ</title>
 </head>
 <body>
-    <h1>Hello</h1>
-</body>
+  <div class="row1">
+    <div class="header_left">
+      <h1>UrQ</h1>
+      <p>Best Queue Best Service
+      </p>
+    </div>
+  </div>
+  <div class="content">
+    <div id="apply">
+      <h1>
+        <strong>สมัครสมาชิก</strong>
+      </h1>
+    </div>
+    <form id="post_regis" method='post'>
+      <div class="col-left">
+        <table id="input-left">
+          <tr>
+            <td class="label">
+              <label>ชื่อผู้ใช้</label>
+            </td>
+            <td class="input">
+              <input type="text" placeholder="ระบุเป็นอักษรภาษาอังกฤษหรือตัวเลข" id="username" pattern="[a-zA-Z0-9]+" />
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              <label>รหัสผ่าน</label>
+            </td>
+            <td class="input">
+              <input type="password" id="password" />
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              <label>ยืนยันรหัสผ่าน</label>
+            </td>
+            <td class="input">
+              <input type="password" id="re-password" />
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              <label>อีเมล์</label>
+            </td>
+            <td class="input">
+              <input type="email" id="email" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" placeholder="example@urqmail.com"/>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              <label>เบอร์โทรติดต่อ</label>
+            </td>
+            <td class="input">
+              <input type="tel" id="phone" placeholder="ระบุเป็นตัวเลข" pattern="[0-9]{10}"/>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-right">
+        <table id="input-right">
+          <tr>
+            <td class="label">
+              <label>ชื่อร้านค้า</label>
+            </td>
+            <td class="input">
+              <input type="text" id="name_store" />
+            </td>
+            <td class="col-3"><label>ประเภท</label></td>
+            <td>     
+                <select class="food_type" id="f_type" onchange="click_shabu_buffet()">
+                    <option value="0">ร้านอาหารทั่วไป</option>
+                    <option value="1">เครื่องดื่ม/คาเฟ่</option>
+                    <option value="2">หมูกระทะ/หมูจุ่ม</option>
+                    <option value="3">บุฟเฟ่ต์</option>
+                  </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              <label>เวลาเปิด-ปิดทำการ</label>
+            </td>
+            <td class="input">
+              <input type="time" id="open_time" />
+              <label class="label2">ถึง</label>
+              <input type="time" id="close_time" />
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              <label>รูปแบบการเรียกคิว</label>
+            </td>
+            <td>
+              <select class="queue_type" id="q_type" onchange="disable_select()">
+                  <option value="0">เรียงตามหมายเลข</option>
+                  <option value="1">กำหนดเลขเองได้</option>
+                </select>
+                
+            </td>
+            <td class="col-3">
+                <label>ประเภทการบริการ</label>
+            </td>
+            <td> 
+                <select class="service_type" id="s_type">
+                    <option value="0">จำกัดเวลา</option>
+                    <option value="1">ไม่จำกัดเวลา</option>
+                  </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              <label>เวลาในการให้บริการ
+                <br />(โดยเฉลี่ย)</label>
+            </td>
+            <td class="fill_num">
+              <input type="number" min="0" id="้hour_service_time" />
+              <label class="label2">ชั่วโมง</label>
+              <input type="number" min="0" id="min_service_time" />
+              <label class="label2">นาที</label>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              <label id="num_s">พนักงานฝ่ายทำอาหาร</label>
+            </td>
+            <td class="fill_num">
+              <input type="number" min="1" id="num_server" />
+              <label class="label2" id="person">คน</label>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="btn_regis">
+        <input class="button" type="submit" value="ยืนยันการสมัครสมาชิก"/>
+      </div>
+    </form>
+    
+  </div>
+  
 </html>
