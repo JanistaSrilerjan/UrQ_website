@@ -1,9 +1,14 @@
+@font-face {
+	font-family: defaultFont;
+	src: url("../fonts/THSarabunNew.ttf");
+}
 body {
   width: 100%;
   height: 100%;
   margin: 0 auto;
   padding: 0;
   background-color: #02bbaa !important;
+  font-family: defaultFont;
 }
 
 .container {
@@ -139,6 +144,7 @@ label {
 	background-color:#fece2f;
 }
 .go-register{
+  font-size: 24px;
   text-align: center;
 }
 .link-register{
