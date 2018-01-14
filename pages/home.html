@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link href="../src/css/home.css" rel="stylesheet" type="text/css" media="all">
     <link href="../src/css/nav.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>หน้าหลัก</title>
 </head>
 
@@ -21,7 +22,9 @@
                     <a href="home.html">หน้าหลัก</a>
                 </li>
                 <li>
-                    <a href="#">หมูสองชั้น</a>
+                    <a href="#">หมูสองชั้น
+                        <i class="fa fa-caret-down"></i>
+                    </a>
                     <ul class="sub-link">
                         <li>
                             <a href="#">โปรไฟล์</a>
@@ -38,26 +41,41 @@
         </div>
     </div>
     <div class="content">
-        <div class="left-col">
-            <h1>เพิ่มรายชื่อจองคิว</h1>
-            <form id="post_name_cust" method='post'>
-                <div class="add_name">
-                    <table>
-                        <td>
-                            <input type="text" placeholder="ระบุชื่อลูกค้า" id="cust_name" />
-                            <button class="add-button">เพิ่ม</button>
-                            <button class="show-list">
-                                แสดง
-                                    <!--<img src="../src/images/show_list.png" width="26px" height="26px" />-->
-                            </button>
-                        </td>
-                    </table>
-
+        <form id="post_name_cust" method='post'>
+            <div class="add_name">
+                <table>
+                    <tr>
+                        <h1>เพิ่มรายชื่อจองคิว</h1>
+                    </tr>
+                    <td>
+                        <input type="text" placeholder="ระบุชื่อลูกค้า" id="cust_name" />
+                        <button class="add-button">เพิ่ม</button>
+                        <button class="show-list">
+                            แสดง
+                            <!--<img src="../src/images/show_list.png" width="26px" height="26px" />-->
+                        </button>
+                    </td>
+                </table>
+            </div> 
+        </form>
+        <div class="next-q">
+                <h1>คิวปัจจุบัน</h1>
+                <label id="num_q">1</label>
+                <div class="name_cust">1
+                    <label id="own_q">เจ้าของคิว : </label>
+                    <label id="n_cust">Tari</label>
                 </div>
-
-            </form>
-
-        </div>
+            
+            
+            </div>
+            <div class="call-q">
+                <table class="call_q">
+                    <td id="call-btn">
+                            <button class="recall_btn">เรียกคิวอีกครั้ง</button>
+                            <button class="reset_btn">รีเซ็ต</button>
+                    </td>
+                </table>
+            </div>
     </div>
 </body>
 

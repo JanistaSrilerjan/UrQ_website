@@ -10,17 +10,11 @@ body {
 	font-size: 20px;
 	color: #4a4a4a;
 }
+.content{
+	width: 100%;
+	margin: 2em;
+}
 
-.left-col{
-	float: left;
-	margin-top: 1.5em;
-	margin-left: 2em;
-	line-height: 0.2;
-}
-.left-col h1{
-	font-size: 32px;
-	font-weight: bold;
-}
 input {
 	padding: 5px 10px;
 	margin: 8px 0;
@@ -67,7 +61,72 @@ input:focus {
 	text-align: center;
 }
 .add_name{
-	margin: 0 auto;
+	float: left;
+	width: 33%;
+	line-height: 0.2;
+	background: #d95252;
+}
+.next-q{
+	float: left;
+	width: 33%;
+	background: #61dc7a;
+}
+.next-q h1{
+	font-size: 45px;
 	text-align: center;
 }
+.call-q{
+	float: right;
+	width: 33%;
+	background: #fed42f;
+}
+.reset_btn{
+	font-family: defaultFont;
+	width: 80px;
+	height: 40px;
+	background-color: #d95252;
+	color: #FFFFFF;
+	border: none;
+	cursor: pointer;
+	border-radius: 4px;
+	font-size: 25px;
+	text-align: center;
+	margin-left: 15px;
+	
+}
+.recall_btn{
+	font-family: defaultFont;
+	width: 130px;
+	height: 40px;
+	background-color: #f1912f;
+	color: #FFFFFF;
+	border: none;
+	cursor: pointer;
+	border-radius: 4px;
+	font-size: 25px;
+	text-align: center;
 
+}
+.call_q #call-btn{
+	float: right;
+}
+#num_q{
+	line-height:0.8;
+	font-size: 220px;
+	text-align: center;
+	display: block;
+}
+#own_q{
+	
+	
+}
+.name_cust{
+	font-size: 32px;
+	text-align: center;
+	line-height: 1;
+	
+}
+#n_cust{
+	color: #d95252;
+	
+}
