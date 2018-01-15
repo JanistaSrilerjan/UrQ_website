@@ -13,7 +13,7 @@ body {
 .content{
 	width: 100%;
 	height: 100%;
-	margin: 2em;
+	
 }
 
 input {
@@ -33,12 +33,12 @@ input:focus {
 }
 #cust_name{
 	width: 220px;
-	height: 40px;
+	height: 35px;
 }
 .add-button{
 	font-family: defaultFont;
 	width: 60px;
-	height: 40px;
+	height: 35px;
 	background-color: #61dc7a;
 	color: #FFFFFF;
 	border: none;
@@ -46,10 +46,11 @@ input:focus {
 	border-radius: 4px;
 	font-size: 25px;
 	text-align: center;
+	margin: 8px;
 }
 .show-list{
-	height: 40px;
-	width: 40px;
+	height: 35px;
+	width: 35px;
 	background: #fed42f;
 	border: none;
 	text-decoration: none;
@@ -60,17 +61,21 @@ input:focus {
 	font-family: defaultFont;
 	font-size: 25px;
 	text-align: center;
+	margin: 8px 8px 8px 0;;
 }
 .add_name{
 	float: left;
 	width: 33%;
-	line-height: 0.2;
-	background: #d95252;
+	line-height: 0;
+	margin-left: 2em;
+	margin-top: 2em;
+	/*background: #d95252;*/
 }
 .next-q{
 	float: left;
 	width: 33%;
-	background: #61dc7a;
+	margin: 3em 0;
+	/*background: #61dc7a;*/
 }
 .next-q h1{
 	font-size: 45px;
@@ -78,13 +83,20 @@ input:focus {
 }
 .call-q{
 	float: right;
-	width: 33%;
-	background: #fed42f;
+	width: 25%;
+	margin-right: 2em;
+	margin-top: 1.5em;
+	/*background: #fed42f;*/
+}
+.call-q .call_q{
+	
+	float: right;
+	
 }
 .reset_btn{
 	font-family: defaultFont;
-	width: 80px;
-	height: 40px;
+	width: 90px;
+	height: 35px;
 	background-color: #d95252;
 	color: #FFFFFF;
 	border: none;
@@ -97,8 +109,8 @@ input:focus {
 }
 .recall_btn{
 	font-family: defaultFont;
-	width: 130px;
-	height: 40px;
+	width: 150px;
+	height: 35px;
 	background-color: #f1912f;
 	color: #FFFFFF;
 	border: none;
@@ -108,18 +120,12 @@ input:focus {
 	text-align: center;
 
 }
-.call_q #call-btn{
-	float: right;
-}
+
 #num_q{
 	line-height:0.8;
 	font-size: 220px;
 	text-align: center;
 	display: block;
-}
-#own_q{
-	
-	
 }
 .name_cust{
 	font-size: 32px;
@@ -147,3 +153,31 @@ input:focus {
 .call-next-btn{
 	text-align: center;
 }
+#call-btn {
+	float: right;
+}
+.call_btn{
+	font-family: defaultFont;
+	width: 100px;
+	height: 35px;
+	background-color: #fed42f;
+	color: #FFFFFF;
+	border: none;
+	cursor: pointer;
+	border-radius: 4px;
+	font-size: 25px;
+	text-align: center;
+}
+#cust_num{
+	width: 155px;
+	height: 35px;
+}
+.call-fill{
+	float: right;
+	margin-top: 20px;
+	display: none;
+}
+.call-fill h2{
+	line-height: 0;
+}
+

@@ -45,39 +45,47 @@
             <div class="add_name">
                 <table>
                     <tr>
-                        <h1>เพิ่มรายชื่อจองคิว</h1>
+                        <h2>เพิ่มรายชื่อจองคิว</h2>
                     </tr>
-                    <td>
+                    <tr>
                         <input type="text" placeholder="ระบุชื่อลูกค้า" id="cust_name" />
                         <button class="add-button">เพิ่ม</button>
                         <button class="show-list">
                             แสดง
                             <!--<img src="../src/images/show_list.png" width="26px" height="26px" />-->
                         </button>
-                    </td>
+                    </tr>
                 </table>
-            </div> 
+            </div>
         </form>
         <div class="next-q">
-                <h1>คิวปัจจุบัน</h1>
-                <label id="num_q">1</label>
-                <div class="name_cust">1
-                    <label id="own_q">เจ้าของคิว : </label>
-                    <label id="n_cust">Tari</label>
-                </div>
-                <div class="call-next-btn">
-                    <button class="next_btn">เรียกคิวถัดไป</button>
-                </div>
-            
+            <h1>คิวปัจจุบัน</h1>
+            <label id="num_q">0</label>
+            <div class="name_cust">
+                <label id="own_q">เจ้าของคิว : </label>
+                <label id="n_cust">None</label>
             </div>
-            <div class="call-q">
-                <table class="call_q">
-                    <td id="call-btn">
-                            <button class="recall_btn">เรียกคิวอีกครั้ง</button>
-                            <button class="reset_btn">รีเซ็ต</button>
-                    </td>
-                </table>
+            <div class="call-next-btn">
+                <button class="next_btn">เรียกคิวถัดไป</button>
             </div>
+        </div>
+        <div class="call-q">
+            <div class="call_q">
+                <button class="recall_btn">เรียกคิวอีกครั้ง</button>
+                <button class="reset_btn">รีเซ็ต</button>
+            </div>
+            <br/>
+            <br/>
+            <div class="call-fill">
+                <h2>ระบุหมายเลขคิวที่คุณต้องการ</h2>
+                <div class="call_q_fill">
+                    <input type="text" id="cust_num" />
+                    <button class="call_btn">เรียกคิวนี้</button>
+
+                </div>
+            </div>
+
+        </div>
     </div>
 </body>
 
