@@ -139,16 +139,16 @@ input:focus {
 }
 .next_btn{
 	font-family: defaultFont;
-	width: 280px;
-	height: 90px;
+	width: 260px;
+	height: 80px;
 	background-color: #02bbaa;
 	color: #FFFFFF;
 	border: none;
 	cursor: pointer;
 	border-radius: 6px;
-	font-size: 65px;
+	font-size: 55px;
 	text-align: center;
-	margin-top: 0.5em;
+	margin-top: 0.6em;
 }
 .call-next-btn{
 	text-align: center;
