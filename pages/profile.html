@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <link href="../src/css/nav.css" rel="stylesheet" type="text/css" media="all">
     <link href="../src/css/profile.css" rel="stylesheet" type="text/css" media="all">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../src/scripts/profile.js"></script>
     <title>โปรไฟล์</title>
 </head>
+
 <body>
     <div class="row1">
         <div class="header_left">
@@ -38,5 +41,85 @@
             </ul>
         </div>
     </div>
+    <div class="content">
+        <div id="profile">
+            <h1>
+                <strong>โปรไฟล์</strong>
+            </h1>
+        </div>
+        <form id="edit_pf" method='put'>
+            <div class="edit_profile">
+                <table class="ed_profile">
+                    <tr>
+                        <label class="bold">ชื่อร้านค้า</label>
+                        <label id="name_store">หมูหนึ่งชั้น</label>
+                        <label class="bold col2">ประเภท</label>
+                        <label id="store_type">หมูกระทะ/หมูจุ่ม</label>
+                        <br />
+                    </tr>
+                    <tr>
+                        <label class="bold">เวลาเปิด-ปิดทำการ</label>
+                        <input type="time" id="open_time" />
+                        <label class="bold col2">ถึง</label>
+                        <input type="time" id="close_time" />
+                        <br />
+                    </tr>
+                    <tr>
+                        <label class="bold">รูปแบบการเรียกคิว</label>
+                        <select class="queue_type" id="q_type" onchange="disable_select()">
+                            <option value="0">เรียงตามหมายเลข</option>
+                            <option value="1">กำหนดเลขเองได้</option>
+                        </select>
+                        <label class="bold col2">ประเภทการบริการ</label>
+                        <select class="service_type" id="s_type">
+                            <option value="0">จำกัดเวลา</option>
+                            <option value="1">ไม่จำกัดเวลา</option>
+                        </select>
+                        <br />
+                    </tr>
+                    <tr>
+                            
+                              <label class="bold">เวลาในการให้บริการ
+                                <br />(โดยเฉลี่ย)</label>
+                            
+                            
+                              <input type="number" min="0" id="้hour_service_time" />
+                              <label class="bold col2">ชั่วโมง</label>
+                              <input type="number" min="0" id="min_service_time" />
+                              <label class="bold col2">นาที</label>
+                            <br />
+                          </tr>
+                          <tr>
+                           
+                              <label class="bold">จำนวน</label>
+                            
+                            
+                              <input type="number" min="1" id="num_server" />
+                              <label class="bold col2" id="person">โต๊ะ</label>
+                            <br/>
+                          </tr>
+                          <tr>
+                                
+                                  <label class="bold">อีเมล์</label>
+                                
+                                
+                                  <input type="email" id="email" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"/>
+                                <br/>
+                              </tr>
+                              <tr>
+                               
+                                  <label class="bold">เบอร์โทรติดต่อ</label>
+                               
+                                
+                                  <input type="tel" id="phone" pattern="[0-9]{10}"/>
+                                
+                              </tr>
+                </table>
+            </div>
+
+        </form>
+
+    </div>
 </body>
+
 </html>

@@ -10,3 +10,66 @@ body {
 	font-size: 20px;
 	color: #4a4a4a;
 }
+#profile {
+	margin-left: 2.5em;
+}
+label{
+	font-size: 25px;
+	
+}
+.bold{
+	font-weight: bold;
+	margin-right: 50px;
+}
+.col2{
+	margin-left: 60px;
+}
+.edit_profile{
+	margin-left: 150px;
+}
+
+input {
+	padding: 5px 10px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-family: defaultFont;
+	font-size: 25px;
+	margin-left: 10px;
+}
+
+input:focus {
+	outline: none !important;
+	border-color: #fed42f;
+	box-shadow: 0 0 5px #fed42f;
+}
+input[type=time] {
+	width: 125px;
+	height: 45px;
+}
+select {
+	color: #4a4a4a;
+	padding: 5px 10px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-family: defaultFont;
+	font-size: 25px;
+	margin-left: 10px;
+}
+select:focus {
+	outline: none;
+	border-color: #fed42f;
+	box-shadow: 0 0 5px #fed42f;
+}
+option:checked {
+	background-color: #ededed !important;
+}
+select:disabled{
+	background: #f7f7f7;
+	color: #a7a7a7;
+}
