@@ -51,75 +51,92 @@
             <div class="edit_profile">
                 <table class="ed_profile">
                     <tr>
-                        <label class="bold">ชื่อร้านค้า</label>
-                        <label id="name_store">หมูหนึ่งชั้น</label>
-                        <label class="bold col2">ประเภท</label>
-                        <label id="store_type">หมูกระทะ/หมูจุ่ม</label>
-                        <br />
+                        <td class="col1">
+                            <label class="bold">ชื่อร้านค้า</label>
+                        </td>
+                        <td class="col11">
+                            <label id="name_store">หมูหนึ่งชั้น</label>
+                            <label class="bold col2">ประเภท</label>
+                            <label id="store_type">หมูกระทะ/หมูจุ่ม</label>
+                        </td>
                     </tr>
                     <tr>
-                        <label class="bold">เวลาเปิด-ปิดทำการ</label>
-                        <input type="time" id="open_time" />
-                        <label class="bold col2">ถึง</label>
-                        <input type="time" id="close_time" />
-                        <br />
+                        <td class="col1">
+                            <label class="bold">เวลาเปิด-ปิดทำการ</label>
+                        </td>
+                        <td class="col11">
+                            <input type="time" id="open_time" />
+                            <label class="bold col2">ถึง</label>
+                            <input type="time" id="close_time" />
+                        </td>
                     </tr>
                     <tr>
-                        <label class="bold">รูปแบบการเรียกคิว</label>
-                        <select class="queue_type" id="q_type" onchange="disable_select()">
-                            <option value="0">เรียงตามหมายเลข</option>
-                            <option value="1">กำหนดเลขเองได้</option>
-                        </select>
-                        <label class="bold col2">ประเภทการบริการ</label>
-                        <select class="service_type" id="s_type">
-                            <option value="0">จำกัดเวลา</option>
-                            <option value="1">ไม่จำกัดเวลา</option>
-                        </select>
-                        <br />
+                        <td class="col1">
+                            <label class="bold">รูปแบบการเรียกคิว</label>
+                        </td>
+                        <td class="col11">
+                            <select class="queue_type" id="q_type" onchange="disable_select()">
+                                <option value="0">เรียงตามหมายเลข</option>
+                                <option value="1">กำหนดเลขเองได้</option>
+                            </select>
+                            <label class="bold col2">ประเภทการบริการ</label>
+                            <select class="service_type" id="s_type">
+                                <option value="0">จำกัดเวลา</option>
+                                <option value="1">ไม่จำกัดเวลา</option>
+                            </select>
+                        </td>
                     </tr>
                     <tr>
-                            
-                              <label class="bold">เวลาในการให้บริการ
+                        <td class="col1">
+                            <label class="bold">เวลาในการให้บริการ
                                 <br />(โดยเฉลี่ย)</label>
-                            
-                            
-                              <input type="number" min="0" id="้hour_service_time" />
-                              <label class="bold col2">ชั่วโมง</label>
-                              <input type="number" min="0" id="min_service_time" />
-                              <label class="bold col2">นาที</label>
-                            <br />
-                          </tr>
-                          <tr>
-                           
-                              <label class="bold">จำนวน</label>
-                            
-                            
-                              <input type="number" min="1" id="num_server" />
-                              <label class="bold col2" id="person">โต๊ะ</label>
-                            <br/>
-                          </tr>
-                          <tr>
-                                
-                                  <label class="bold">อีเมล์</label>
-                                
-                                
-                                  <input type="email" id="email" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"/>
-                                <br/>
-                              </tr>
-                              <tr>
-                               
-                                  <label class="bold">เบอร์โทรติดต่อ</label>
-                               
-                                
-                                  <input type="tel" id="phone" pattern="[0-9]{10}"/>
-                                
-                              </tr>
+                        </td>
+                        <td class="col11">
+                            <input type="number" min="0" id="้hour_service_time" />
+                            <label class="bold col2">ชั่วโมง</label>
+                            <input type="number" min="0" id="min_service_time" />
+                            <label class="bold col2">นาที</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col1">
+                            <label class="bold">จำนวน</label>
+                        </td>
+                        <td class="col11">
+                            <input type="number" min="1" id="num_server" />
+                            <label class="bold col2" id="person">โต๊ะ</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col1">
+                            <label class="bold">อีเมล์</label>
+                        </td>
+                        <td class="col11">
+                            <input type="email" id="email" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" />
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col1">
+                            <label class="bold">เบอร์โทรติดต่อ</label>
+
+                        </td>
+                        <td class="col11">
+                            <input type="tel" id="phone" pattern="[0-9]{10}" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="col11">
+                                <div class="save_edit">
+                                        <button class="button" >บันทึกการเปลี่ยนแปลง</button>
+                                      </div>
+                        </td>
+                    </tr>
                 </table>
             </div>
-
+            
         </form>
-
     </div>
 </body>
-
 </html>
