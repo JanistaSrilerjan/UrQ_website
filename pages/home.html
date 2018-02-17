@@ -6,6 +6,7 @@
     <link href="../src/css/home.css" rel="stylesheet" type="text/css" media="all">
     <link href="../src/css/nav.css" rel="stylesheet" type="text/css" media="all">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../src/scripts/reset-modal.js" ></script>
     <title>หน้าหลัก</title>
 </head>
 
@@ -19,7 +20,7 @@
         <div class="header_right">
             <ul id="menu">
                 <li>
-                    <a href="home.html">หน้าหลัก</a>
+                    <a href="./home.html">หน้าหลัก</a>
                 </li>
                 <li>
                     <a href="#">หมูสองชั้น
@@ -27,7 +28,7 @@
                     </a>
                     <ul class="sub-link">
                         <li>
-                            <a href="#">โปรไฟล์</a>
+                            <a href="./profile.html">โปรไฟล์</a>
                         </li>
                         <li>
                             <a href="#">ติดต่อเรา</a>
@@ -72,7 +73,7 @@
         <div class="call-q">
             <div class="call_q">
                 <button class="recall_btn">เรียกคิวอีกครั้ง</button>
-                <button class="reset_btn">รีเซ็ต</button>
+                <label class="reset_btn" for="modal-toggle">รีเซ็ต</label>
             </div>
             <br/>
             <br/>
@@ -81,12 +82,22 @@
                 <div class="call_q_fill">
                     <input type="text" id="cust_num" />
                     <button class="call_btn">เรียกคิวนี้</button>
-
                 </div>
             </div>
-
         </div>
     </div>
+    <div class="modal-container">
+        <input id="modal-toggle" type="checkbox">      
+        <label class="modal-backdrop" for="modal-toggle"></label>
+        <div class="modal-content">
+          <label class="modal-close" for="modal-toggle">&#x2715;</label>
+          <p>คุณต้องการเริ่มต้นหมายเลขคิวใหม่หรือไม่?</p> 
+          <div class="btn-rs">
+            <label class="modal-content-btn" id="reset_ok" for="modal-toggle">ตกลง</label>
+            <label class="modal-content-btn" id="reset_not" for="modal-toggle">ยกเลิก</label>
+          </div>   
+        </div>          
+      </div>
 </body>
 
 </html>
