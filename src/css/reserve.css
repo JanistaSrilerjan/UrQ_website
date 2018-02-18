@@ -11,7 +11,8 @@ body {
 	color: #4a4a4a;
 }
 .content {
-	margin-left: 2.5em;
+    margin-left: 2.5em;
+    width: 100%;
 	
 }
 
@@ -83,3 +84,15 @@ input[type=time] {
 .button:hover{
 	background-color:rgb(253, 149, 38);
 }
+.col-left {
+	float: left;
+    width: 30%;
+   
+}
+.col-right {
+	float: right;
+    width: 65%;
+    margin-top: 60px;
+    margin-left: 40px;
+}
+
