@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="../src/css/nav.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../src/css/reserve.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../src/scripts/reserve_time.js"></script>
+    <title>จองคิวออนไลน์</title>
+</head>
+
+<body>
+
+    <div class="row1">
+        <div class="header_left">
+            <h1>UrQ</h1>
+            <p>Best Queue Best Service
+            </p>
+        </div>
+        <div class="header_right">
+            <ul id="menu">
+                <li>
+                    <a href="./home.html">หน้าหลัก</a>
+                </li>
+                <li>
+                    <a href="#">หมูสองชั้น
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="sub-link">
+                        <li>
+                            <a href="./profile.html">โปรไฟล์</a>
+                        </li>
+                        <li>
+                            <a href="./reserve.html">จองออนไลน์</a>
+                        </li>
+                        <li>
+                            <a href="#">ติดต่อเรา</a>
+                        </li>
+                        <li>
+                            <a href="../index.html">ออกจากระบบ</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div id="reserve">
+            <h1>
+                <strong>ระบบบริการจองคิวออนไลน์</strong>
+            </h1>
+        </div>
+        <div class="left">
+            <form id="edit_pf" method='put'>
+                <div>
+                    <select class="op-cl-reserve" id="op-cl-reserve" onchange="select()">
+                        <option value="0">เปิดระบบ</option>
+                        <option value="1">ปิดระบบ</option>
+                    </select>
+                </div>
+                <div class="reserve-time" id="reserve-time">
+                    <table>
+                        <tr>
+                            <br />
+                            <h2>ระบุเวลาให้บริการให้จอง</h2>
+                        </tr>
+                        <tr>
+                            <input type="time" id="open_time" />
+                            <label class="label2">ถึง</label>
+                            <input type="time" id="close_time" />
+                        </tr>
+                        <tr>
+                            <div class="save_reserve">
+                                <button class="button">บันทึกการเปลี่ยนแปลง</button>
+                            </div>
+                        </tr>
+                    </table>
+
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>
