@@ -6,7 +6,7 @@
     <link href="../src/css/home.css" rel="stylesheet" type="text/css" media="all">
     <link href="../src/css/nav.css" rel="stylesheet" type="text/css" media="all">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="../src/scripts/next_q.js"></script>
+    <script src="../src/scripts/home.js"></script>
     <title>หน้าหลัก</title>
 </head>
 
@@ -45,20 +45,33 @@
         </div>
     </div>
     <div class="content">
-        <form id="post_name_cust" method='post'>
+        <div>
+
             <div class="add_name">
+
                 <table>
                     <tr>
                         <h2>เพิ่มรายชื่อจองคิว</h2>
                     </tr>
                     <tr>
                         <input type="text" placeholder="ระบุชื่อลูกค้า" id="cust_name" />
-                        <button class="add-button">เพิ่ม</button>
-                        <button class="show-list"><i class="fa fa-file-text-o" aria-hidden="true"></i></button>
+                        <button class="add-button" onclick="add_nameq()">เพิ่ม</button>
+                        <button class="show-list">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        </button>
                     </tr>
                 </table>
+
+                <div class="list-q" id="list-q">
+                    <div id="each_list">
+                        <label id="q_num">0</label>
+                        <label id="name_cust">None</label>
+                        <label id="rand_pin">0000</label>
+                    </div>
+                </div>
             </div>
-        </form>
+        </div>
+
         <div class="next-q">
             <h1>คิวปัจจุบัน</h1>
             <label id="num_q">0</label>
