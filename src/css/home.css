@@ -52,17 +52,18 @@ input:focus {
 	height: 35px;
 	width: 35px;
 	background: #fed42f;
-	border: none;
-	text-decoration: none;
-	display: inline-block;
+	border: none;	
 	border-radius: 4px;
 	cursor: pointer;
 	color: #FFFFFF;
 	font-family: defaultFont;
 	font-size: 25px;
 	text-align: center;
-	margin: 8px 8px 8px 0;;
 }
+.show-list i{
+	font-size: 20px;
+}
+
 .add_name{
 	float: left;
 	width: 33%;
@@ -137,7 +138,7 @@ input:focus {
 	color: #d95252;
 	
 }
-.next_btn{
+#next_btn{
 	font-family: defaultFont;
 	width: 260px;
 	height: 80px;

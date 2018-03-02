@@ -6,6 +6,7 @@
     <link href="../src/css/home.css" rel="stylesheet" type="text/css" media="all">
     <link href="../src/css/nav.css" rel="stylesheet" type="text/css" media="all">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../src/scripts/next_q.js"></script>
     <title>หน้าหลัก</title>
 </head>
 
@@ -53,10 +54,7 @@
                     <tr>
                         <input type="text" placeholder="ระบุชื่อลูกค้า" id="cust_name" />
                         <button class="add-button">เพิ่ม</button>
-                        <button class="show-list">
-                            โชว์
-                            <!--<img src="../src/images/show_list.png" width="26px" height="26px" />-->
-                        </button>
+                        <button class="show-list"><i class="fa fa-file-text-o" aria-hidden="true"></i></button>
                     </tr>
                 </table>
             </div>
@@ -69,7 +67,7 @@
                 <label id="n_cust">None</label>
             </div>
             <div class="call-next-btn">
-                <button class="next_btn">เรียกคิวถัดไป</button>
+                <button id="next_btn" onclick="next()">เรียกคิวถัดไป</button>
             </div>
         </div>
         <div class="call-q">
@@ -84,10 +82,8 @@
                 <div class="call_q_fill">
                     <input type="text" id="cust_num" />
                     <button class="call_btn">เรียกคิวนี้</button>
-
                 </div>
             </div>
-
         </div>
     </div>
 </body>
