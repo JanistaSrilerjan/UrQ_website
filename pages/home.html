@@ -46,32 +46,34 @@
     </div>
     <div class="content">
         <div>
-
             <div class="add_name">
-
                 <table>
                     <tr>
                         <h2>เพิ่มรายชื่อจองคิว</h2>
                     </tr>
                     <tr>
-                        <input type="text" placeholder="ระบุชื่อลูกค้า" id="cust_name" />
-                        <button class="add-button" onclick="add_nameq()">เพิ่ม</button>
+                        <input type="text" placeholder="ระบุชื่อลูกค้า" id="cust_name" required/>
+                        <button class="add-button" type="submit" onclick="actionSubmit()">เพิ่ม</button>
                         <button class="show-list">
                             <i class="fa fa-file-text-o" aria-hidden="true"></i>
                         </button>
                     </tr>
                 </table>
-
+                <div id="empty_name">
+                    <label>
+                        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp;กรุณาระบุชื่อผู้จอง</label>
+                </div>
                 <div class="list-q" id="list-q">
                     <div id="each_list">
+                        <label>คิว: </label>
                         <label id="q_num">0</label>
                         <label id="name_cust">None</label>
+                        <label>Pin: </label>
                         <label id="rand_pin">0000</label>
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="next-q">
             <h1>คิวปัจจุบัน</h1>
             <label id="num_q">0</label>
@@ -96,6 +98,9 @@
                     <input type="text" id="cust_num" />
                     <button class="call_btn">เรียกคิวนี้</button>
                 </div>
+            </div>
+            <div class="show_call">
+
             </div>
         </div>
     </div>
