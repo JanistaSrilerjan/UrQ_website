@@ -95,13 +95,23 @@
             <div class="call-fill">
                 <h2>ระบุหมายเลขคิวที่คุณต้องการ</h2>
                 <div class="call_q_fill">
-                    <input type="text" id="cust_num" />
-                    <button class="call_btn">เรียกคิวนี้</button>
+                    <input type="number" id="cust_num" required/>
+                    <button class="call_btn" type="submit" onclick="call_q()">เรียกคิวนี้</button>
+                </div>
+                <div id="empty_num">
+                    <label id="empty_q"></label>
+                </div>
+                <div class="show_call" id="show_call">
+                    <div id="each_call">
+                        <label>คิวที่: </label>
+                        <label id="call_num">0</label>
+                        <label id="na_cust">None</label>
+                    </div>
+                    <button class="recall_b">เรียกซ้ำ</button>
+                    <button class="cancle_b" onclick="cancel()"><strong>X</strong></button>
                 </div>
             </div>
-            <div class="show_call">
-
-            </div>
+            
         </div>
     </div>
 </body>
